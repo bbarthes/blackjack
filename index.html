@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Black Jack</title>
+
+    <style>
+      body {
+        border: 1px solid black;
+      }
+    </style>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+  
+  <body onload="load();">
+    <h1> BlackJack </h1>
+    
+    <section>
+      Votre argent : <span id="money-player"> </span> 
+      Celui de la banque: <span id="money-bank"> </span> 
+    </section>
+    
+    <section id "area-game">
+      <section id "area-bank">
+        <h2> Les cartes de la banque </h2>
+        <section id="carde-bank"> </section>
+      </section>
+      
+      <section id "area-player">
+        <h2> Vos cartes</h2>
+        Votre niveau: <span id="level-player"></span>
+         <button id="newCard">Nouvelle carte !</button> <!-- onclick="newCardPlayer();" -->
+        
+        <section id="card-player"> <img src="img/01.BMP"></img> </section>
+      </section>
+      
+      
+    </section>
+    
+   
+  
+  
+  </body>
+
+</html>
