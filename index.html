@@ -9,7 +9,21 @@
     <style>
       body {
         border: 1px solid black;
+        
       }
+      .icone span
+          {
+
+              width: 192px;
+
+              height: 279px;
+
+              display: inline-block;
+
+              background: url("img/cartes.png") no-repeat;
+
+          }
+      .icone .icone-1 { background-position: left top; }
     </style>
 
     <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
@@ -27,18 +41,18 @@
       Celui de la banque: <span id="money-bank"> </span> 
     </section>
     
-    <section id "area-game">
-      <section id "area-bank">
+    <section id="area-game">
+      <section id="area-bank">
         <h2> Les cartes de la banque </h2>
         <section id="carde-bank"> </section>
       </section>
       
-      <section id "area-player">
+      <section id="area-player">
         <h2> Vos cartes</h2>
         Votre niveau: <span id="level-player"></span>
          <button id="newCard">Nouvelle carte !</button> <!-- onclick="newCardPlayer();" -->
         
-        <section id="card-player"> <img src="img/01.BMP"></img> </section>
+        <section class="icone" id="card-player"> <span class="icone-1"></span> </section>
       </section>
       
       
